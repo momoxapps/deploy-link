@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>تشغيل التطبيق</title>
-  <script>
-    setTimeout(function () {
-      window.location.href = "deploy://applyProfile?name=OnUpdate.xml";
-    }, 100); // تأخير بسيط
-  </script>
+  <title>تشغيل التحديث</title>
 </head>
 <body>
-  <h2>يتم الآن تشغيل التطبيق...</h2>
+  <h2>انقر لتطبيق التحديث</h2>
+  <p>يجب الضغط على الزر يدويًا لتشغيل التطبيق</p>
+  <button style="font-size: 18px; padding: 10px 20px;"
+          onclick="window.location.href='deploy://applyProfile?name=OnUpdate.xml'">
+    تطبيق التحديث
+  </button>
 </body>
 </html>
