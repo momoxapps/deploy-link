@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Run Update</title>
+  <meta charset="UTF-8">
+  <title>إلى زوجتي الغالية إكرام ♥️</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #f9c5d1);
+      font-family: 'Cairo', sans-serif;
+      text-align: center;
+      color: #4b2c3f;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #c9184a;
+    }
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+    .hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 8s infinite ease-in;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 1.1em;
+      color: #6a1b4d;
+    }
+  </style>
 </head>
 <body>
-    <p>Click the button below to apply the profile:</p>
-    <a href="deploy://applyProfile?name=MDE/Notification_Bar.xml">
-        <button>Apply Profile</button>
-    </a>
+
+  <div class="hearts">
+    <!-- Generate multiple floating hearts -->
+    <script>
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDelay = Math.random() * 8 + "s";
+        heart.style.opacity = Math.random();
+        heart.style.transform = `scale(${Math.random() + 0.5}) rotate(45deg)`;
+        document.body.appendChild(heart);
+      }
+    </script>
+  </div>
+
+  <h1>إلى زوجتي الغالية إكرام خريس ♥️</h1>
+
+  <p>تحيات عاشق كوته نيران الفراق</p>
+
+  <p>اليوم مو بس عيد ميلادك، اليوم عيد قلبي لأنك فيه...</p>
+  <p>يوم ميلادك هو اليوم اللي بدأ فيه النور يدخل حياتي...</p>
+  <p>مهما كتبت أو قلت، ما يكفيك... بس من قلبي... أحبك...</p>
+  <p>كل عام وانتِ بألف خير يا روح الروح، ويا كل الحكاية الجميلة اللي بدأت من سنين، ولسه مستمرة ❤️</p>
+
+  <footer>زوجك المخلص، عبدالعزيز حماده 😘</footer>
+
 </body>
 </html>
+
