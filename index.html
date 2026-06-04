@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Deploy Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .btn {
+            padding: 15px 25px;
+            font-size: 18px;
+            background: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #125aa0;
+        }
+    </style>
+</head>
+
+<body>
+
+<button class="btn" onclick="deployProfile()">
+  
+</button>
+
+<script>
+    function deployProfile() {
+        window.location.href = "deploy://Wlan(MXLEJOFF).xml";
+    }
+</script>
+
+</body>
+</html>
